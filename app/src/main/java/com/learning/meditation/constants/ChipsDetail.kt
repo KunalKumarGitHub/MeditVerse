@@ -2,8 +2,6 @@ package com.learning.meditation.constants
 
 import android.content.Context
 import com.google.gson.Gson
-import com.google.gson.JsonSyntaxException
-import java.io.IOException
 
 data class ChipDetail(
     val name: String,

@@ -2,12 +2,10 @@ package com.learning.meditation.repository
 
 import android.util.Log
 import com.google.firebase.firestore.FirebaseFirestore
-import com.learning.meditation.dataclass.MeditationTrack
 import com.learning.meditation.dataclass.Routine
 import com.learning.meditation.dataclass.RoutineStep
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.tasks.await
-import java.util.UUID
 
 class RoutineRepository {
     private val firestore = FirebaseFirestore.getInstance()

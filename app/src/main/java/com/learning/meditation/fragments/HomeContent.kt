@@ -188,7 +188,6 @@ fun GreetingSection(
 @Composable
 fun ChipSection(
     chips: String,
-    index:Int,
     onClick: () -> Unit
 ) {
     Box(
@@ -207,7 +206,7 @@ fun ChipSection(
 }
 
 @Composable
-fun CurrentMeditation(color: Color = Color.Black) {
+fun CurrentMeditation() {
     var quoteText by remember { mutableStateOf("Loading...") }
     var author by remember { mutableStateOf("") }
     val context = LocalContext.current
@@ -520,7 +519,7 @@ fun HomeContent(
         GreetingSection(homeNavController=homeNavController)
         LazyRow{
             items(chipData.size) { index ->
-                ChipSection(chipData[index].name,index) {
+                ChipSection(chipData[index].name) {
                     navController.navigate("ChipDetailScreen/${index}"){
                         launchSingleTop=true
                         restoreState=true

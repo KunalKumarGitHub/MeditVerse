@@ -84,7 +84,13 @@ class PlaylistRepository{
             }
     }
 
-    fun addSleepTrackToPlaylist(userId: String, playlist: Playlist, track: SleepTrack, context: Context, onComplete: () -> Unit, onFailure: (Exception)->Unit) {
+    fun addSleepTrackToPlaylist(
+        userId: String,
+        playlist: Playlist,
+        track: SleepTrack,
+        context: Context,
+        onFailure: (Exception) -> Unit
+    ) {
         val firestore = FirebaseFirestore.getInstance()
 
         val trackRef = firestore.collection("users").document(userId)

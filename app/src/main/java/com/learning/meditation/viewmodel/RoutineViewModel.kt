@@ -133,8 +133,9 @@ class RoutineViewModel(private val repository: RoutineRepository) : ViewModel() 
             val nextStepDuration = _routineSteps.value[_currentStepIndex.value].durationMinutes
             setRemainingTime(nextStepDuration * 60)
         }
-        else
-        _currentStepIndex.value+=1
+        else {
+            _currentStepIndex.value += 1
+        }
     }
 
     fun setRemainingTime(duration: Int) {

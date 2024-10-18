@@ -26,7 +26,6 @@ import androidx.compose.material.icons.filled.Delete
 import androidx.compose.material.icons.filled.Edit
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
-import androidx.compose.material3.ButtonColors
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
@@ -545,7 +544,7 @@ fun AddRoutineDialog(onDismiss: () -> Unit, onAddRoutine: (Routine, List<Routine
                     value = stepDuration,
                     singleLine = true,
                     onValueChange = { stepDuration = it.filter { char -> char.isDigit() } },
-                    label = { Text("Step Duration (minutes)",fontFamily = FontFamily.Default,) },
+                    label = { Text("Step Duration (minutes)",fontFamily = FontFamily.Default) },
                     modifier = Modifier.fillMaxWidth(),
                     keyboardActions = keyboardActions,
                     keyboardOptions = KeyboardOptions(imeAction = imeActionDone, keyboardType = KeyboardType.Number),

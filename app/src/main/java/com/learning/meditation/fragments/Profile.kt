@@ -89,7 +89,7 @@ fun Profile(
     val currentUser = FirebaseAuth.getInstance().currentUser
     val userName = remember { currentUser?.displayName.toString()
         .replaceFirstChar { if (it.isLowerCase()) it.titlecase(Locale.getDefault()) else it.toString() } }
-    val email = remember { currentUser?.email ?: "No Email" }
+    remember { currentUser?.email ?: "No Email" }
     var profileImageUrl by remember { mutableStateOf(currentUser?.photoUrl?.toString() ?: "") }
 
     var loading by remember { mutableStateOf(false) }
@@ -441,7 +441,6 @@ fun ProfileOption(icon: ImageVector, title: String, onClick: () -> Unit = {}) {
 
 @Composable
 fun ProfileNavigationFun(
-    homeNavController: NavHostController,
     mainNavController: NavHostController,
     connectivityViewModel: ConnectivityViewModel
 ){

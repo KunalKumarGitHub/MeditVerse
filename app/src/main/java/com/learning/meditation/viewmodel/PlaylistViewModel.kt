@@ -58,11 +58,7 @@ class PlaylistViewModel(private val repository: PlaylistRepository) : ViewModel(
     }
 
     fun addSleepTrackToPlaylist(userId: String, playlist: Playlist, track: SleepTrack, context: Context, onComplete: () -> Unit, onFailure: (Exception)->Unit) {
-        repository.addSleepTrackToPlaylist(userId, playlist, track, context,{
-            onComplete()
-            fetchPlaylists(userId)
-        },
-            onFailure)
+        repository.addSleepTrackToPlaylist(userId, playlist, track, context, onFailure)
     }
 
     fun addPlaylist(userId: String, playlist: Playlist, onComplete: () -> Unit, onFailure: (Exception) -> Unit) {

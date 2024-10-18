@@ -16,12 +16,10 @@ import kotlinx.coroutines.launch
 class ConnectivityViewModel(context: Context) : ViewModel() {
     private val connectivityObserver = ConnectivityObserver(context)
 
-    // StateFlow to hold the connectivity status
     private val _isConnected = MutableStateFlow(false)
     val isConnected: StateFlow<Boolean> = _isConnected
 
     init {
-        // Observe connectivity status and update the isConnected StateFlow
         viewModelScope.launch {
             connectivityObserver.observeNetworkStatus().collect { status ->
                 _isConnected.value = status
@@ -30,10 +28,8 @@ class ConnectivityViewModel(context: Context) : ViewModel() {
     }
 }
 
-// ConnectivityObserver implementation using ConnectivityManager
 class ConnectivityObserver(private val context: Context) {
 
-    // Observe the network status and return a Flow<Boolean> to indicate if the network is connected
     fun observeNetworkStatus() = callbackFlow {
         val connectivityManager = context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
         val networkCallback = object : ConnectivityManager.NetworkCallback() {
@@ -53,7 +49,6 @@ class ConnectivityObserver(private val context: Context) {
 
         connectivityManager.registerNetworkCallback(networkRequest, networkCallback)
 
-        // Initial state check
         val isConnected = isNetworkAvailable(connectivityManager)
         trySend(isConnected)
 

@@ -2,9 +2,7 @@ package com.learning.meditation.viewmodelfactory
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.learning.meditation.repository.MeditationRepository
 import com.learning.meditation.repository.SleepRepository
-import com.learning.meditation.viewmodel.MeditationViewModel
 import com.learning.meditation.viewmodel.SleepViewModel
 
 class SleepViewModelFactory(

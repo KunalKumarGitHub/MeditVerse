@@ -19,7 +19,6 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -28,7 +27,6 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -41,14 +39,8 @@ import com.learning.meditation.fragments.MeditationNavigationFun
 import com.learning.meditation.fragments.MusicNavigationFun
 import com.learning.meditation.fragments.ProfileNavigationFun
 import com.learning.meditation.fragments.SleepNavigationFun
-import com.learning.meditation.repository.MeditationRepository
-import com.learning.meditation.repository.SleepRepository
 import com.learning.meditation.ui.theme.*
 import com.learning.meditation.viewmodel.ConnectivityViewModel
-import com.learning.meditation.viewmodel.MeditationViewModel
-import com.learning.meditation.viewmodel.SleepViewModel
-import com.learning.meditation.viewmodelfactory.MeditationViewModelFactory
-import com.learning.meditation.viewmodelfactory.SleepViewModelFactory
 
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
@@ -164,16 +156,16 @@ fun BottomNavigationFun(
             HomeNavigationFun(homeNavController=navController,connectivityViewModel)
         }
         composable("meditate"){
-            MeditationNavigationFun(homeNavController =navController,connectivityViewModel)
+            MeditationNavigationFun(connectivityViewModel)
         }
         composable("sleep"){
-            SleepNavigationFun(homeNavController=navController,connectivityViewModel)
+            SleepNavigationFun(connectivityViewModel)
         }
         composable("music"){
-            MusicNavigationFun(homeNavController = navController,connectivityViewModel)
+            MusicNavigationFun(connectivityViewModel)
         }
         composable("profile"){
-            ProfileNavigationFun(homeNavController = navController,mainNavController=mainNavController,connectivityViewModel)
+            ProfileNavigationFun(mainNavController=mainNavController, connectivityViewModel)
         }
     }
 }

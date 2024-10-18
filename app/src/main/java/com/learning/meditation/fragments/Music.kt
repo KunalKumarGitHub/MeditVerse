@@ -301,7 +301,6 @@ fun Music(
 
 @Composable
 fun MusicNavigationFun(
-    homeNavController: NavHostController,
     connectivityViewModel: ConnectivityViewModel
 ){
     val repositoryMusic = remember { PlaylistRepository() }
@@ -317,7 +316,11 @@ fun MusicNavigationFun(
         composable("playlistDetails/{playlistId}/{playlistName}") { backStackEntry ->
             val playlistId = backStackEntry.arguments?.getString("playlistId") ?: ""
             val playlistName = backStackEntry.arguments?.getString("playlistName") ?: ""
-            DisplayPlaylistTracks(playlistId = playlistId, playlistName=playlistName,navController = navController,viewModel=viewModelMusic,connectivityViewModel = connectivityViewModel
+            DisplayPlaylistTracks(
+                playlistId = playlistId,
+                navController = navController,
+                playlistName=playlistName,
+                viewModel=viewModelMusic
             )
         }
         composable(route="meditationDetail/{trackJson}",
