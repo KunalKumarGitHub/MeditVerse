@@ -123,7 +123,7 @@ class FirebaseAuthHelper {
 
 
     private fun sendVerificationEmail(email: String, code: String, onFailure: (Exception?) -> Unit) {
-        val username = "meditverse@gmail.com"
+        val username = "your_mail"
         val password = "your_app_password"
 
         val props = Properties().apply {
