@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Meditation" parent="android:Theme.Material.Light.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="android:colorPrimary">@color/teal</item>
+        <item name="android:colorPrimaryDark">@color/teal</item>
+        <item name="android:textColorPrimary">@color/white</item>
+    </style>
+
+    <style name="Theme.Meditation.NoActionBar">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="SplashScreenTheme" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+        <item name="android:statusBarColor">@color/teal</item>
+        <item name="android:windowSplashScreenBackground" tools:ignore="NewApi">@color/teal</item>
+        <item name="android:windowSplashScreenAnimatedIcon" tools:ignore="NewApi">@drawable/animated_logo</item>
+        <item name="android:windowSplashScreenAnimationDuration" tools:ignore="NewApi">2000</item>
+        <item name="postSplashScreenTheme">@style/Theme.Meditation.NoActionBar</item>
+    </style>
+
+</resources>

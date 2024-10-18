@@ -1,0 +1,168 @@
+{
+    "chips": [
+      {
+        "name": "Insomnia",
+        "intro": "Insomnia is a sleep disorder that makes it hard to fall asleep, stay asleep, or causes you to wake up too early and not be able to go back to sleep.",
+        "symptoms": [
+          "Trouble falling asleep",
+          "Trouble staying asleep throughout the night",
+          "Unwanted early morning waking",
+          "Resisting sleeping at bedtime in children and teens",
+          "Difficulty sleeping without a caregiver's help in children and teens"
+        ],
+        "diagnosis": "Diagnosis of insomnia typically involves a review of your sleep history and habits, a physical exam, and sometimes sleep studies.",
+        "treatmentIntro":"Treatment for insomnia can vary depending on whether it's acute (short-term) or chronic (long-term), but it generally involves a combination of lifestyle changes, behavioral therapies, and sometimes medication.",
+        "treatments": [
+          {
+            "name": "Cognitive Behavioral Therapy for Insomnia (CBT-I)",
+            "description": "CBT-I helps manage anxiety related to sleep issues and establishes better sleep habits."
+          },
+          {
+            "name": "Sleep Medications",
+            "description": "Medication can help promote sleep but may come with side effects, such as daytime drowsiness or confusion."
+          },
+          {
+            "name": "Mind-Body Techniques",
+            "description": "Guided meditation, yoga, and relaxation techniques can help reduce insomnia symptoms."
+          }
+        ]
+      },
+      {
+        "name": "Depression",
+        "intro": "Depression is a mood disorder that causes a persistent feeling of sadness and loss of interest.",
+        "symptoms": [
+          "Persistent depressed mood",
+          "Loss of interest or pleasure in hobbies and activities",
+          "Difficulty sleeping or oversleeping",
+          "Excessive feelings of guilt or worthlessness",
+          "Thoughts of death or suicide, or suicide attempts"
+        ],
+        "diagnosis": "Diagnosis of depression typically involves a combination of questionnaires and discussions with a healthcare provider about symptoms and history.",
+        "treatmentIntro": "It is a complex mental health condition that can be treated effectively through a combination of therapies, lifestyle changes, and sometimes medication. The choice of treatment depends on the severity of the depression, the individual's preferences, and any other co-existing health conditions.",
+        "treatments": [
+          {
+            "name": "Cognitive Behavioral Therapy for Depression (CBT-D)",
+            "description": "CBT helps identify and change negative thought patterns and behaviors contributing to depression."
+          },
+          {
+            "name": "Medication",
+            "description": "Antidepressant medications can help regulate brain chemistry linked to mood disorders."
+          },
+          {
+            "name": "Lifestyle Changes",
+            "description": "Regular exercise, healthy eating, and sufficient sleep can support recovery from depression."
+          }
+        ]
+      },
+      {
+        "name": "Anxiety",
+        "intro": "Anxiety is a normal response to stress, but excessive anxiety that interferes with daily activities may indicate an anxiety disorder.",
+        "symptoms": [
+          "Excessive worrying",
+          "Restlessness or feeling on edge",
+          "Fatigue",
+          "Difficulty concentrating",
+          "Irritability"
+        ],
+        "diagnosis": "Diagnosis of anxiety disorders may involve self-assessment questionnaires, a physical exam, and discussions with a healthcare provider.",
+        "treatmentIntro":"Anxiety disorders can be effectively managed through a combination of therapeutic approaches, lifestyle modifications, and medications. Individualized treatment plans may include cognitive-behavioral therapy (CBT) and relaxation techniques, depending on the severity of symptoms and personal preferences.",
+        "treatments": [
+          {
+            "name": "Cognitive Behavioral Therapy (CBT)",
+            "description": "CBT helps manage anxiety by teaching patients how to challenge and change unhelpful thoughts and behaviors."
+          },
+          {
+            "name": "Medications",
+            "description": "Anti-anxiety medications or antidepressants can help manage symptoms."
+          },
+          {
+            "name": "Relaxation Techniques",
+            "description": "Deep breathing, meditation, and yoga can help reduce anxiety."
+          }
+        ]
+      },
+      {
+        "name": "Bipolar Disorder",
+        "intro": "Bipolar disorder is a mental health condition marked by extreme mood swings, including emotional highs (mania) and lows (depression).",
+        "symptoms": [
+          "Mood swings from high energy to deep depression",
+          "Impulsivity during manic episodes",
+          "Insomnia or oversleeping",
+          "Feelings of hopelessness during depressive episodes",
+          "Difficulty concentrating"
+        ],
+        "diagnosis": "Diagnosis typically involves a psychiatric evaluation, mood charting, and sometimes family history analysis.",
+        "treatmentIntro": "Bipolar disorder treatment typically includes a blend of medication, psychotherapy, and lifestyle adjustments. This multifaceted approach aims to stabilize mood swings and minimize the impact of depressive and manic episodes, tailored to the individual's needs and circumstances.",
+        "treatments": [
+          {
+            "name": "Mood Stabilizers",
+            "description": "Medications that help control mood swings between mania and depression."
+          },
+          {
+            "name": "Psychotherapy",
+            "description": "Therapy helps individuals manage symptoms, understand their condition, and develop coping strategies."
+          },
+          {
+            "name": "Lifestyle Changes",
+            "description": "Routine sleep, exercise, and healthy diet are crucial in managing bipolar disorder."
+          }
+        ]
+      },
+      {
+        "name": "Attention Deficit Hyperactivity Disorder",
+        "intro": "ADHD is a chronic condition marked by persistent inattention, hyperactivity, and sometimes impulsivity.",
+        "symptoms": [
+          "Difficulty sustaining attention",
+          "Impulsiveness",
+          "Excessive activity or restlessness",
+          "Difficulty organizing tasks",
+          "Forgetfulness in daily activities"
+        ],
+        "diagnosis": "Diagnosis often involves questionnaires, behavioral assessments, and possibly neuropsychological testing.",
+        "treatmentIntro": "ADHD treatment often combines behavioral therapy, educational support, and medication to improve focus and manage symptoms. The approach is personalized, considering the severity of the condition and individual lifestyle factors to enhance daily functioning.",
+        "treatments": [
+          {
+            "name": "Behavioral Therapy",
+            "description": "Behavioral therapy helps manage symptoms and develop coping strategies."
+          },
+          {
+            "name": "Stimulant Medications",
+            "description": "Stimulants are commonly prescribed to help improve focus and reduce hyperactivity."
+          },
+          {
+            "name": "Educational Support",
+            "description": "School accommodations and support can assist with learning difficulties associated with ADHD."
+          }
+        ]
+      },
+      {
+        "name": "Obsessive Compulsive Disorder",
+        "intro": "OCD is a disorder characterized by unwanted and intrusive thoughts (obsessions) and repetitive behaviors (compulsions).",
+        "symptoms": [
+          "Recurrent, unwanted thoughts",
+          "Repetitive behaviors like hand-washing or checking",
+          "Intense anxiety if compulsions are not performed",
+          "Avoidance of triggers",
+          "Doubting and needing constant reassurance"
+        ],
+        "diagnosis": "Diagnosis involves a psychological evaluation, discussion of symptoms, and sometimes structured questionnaires.",
+        "treatmentIntro": "OCD can be effectively treated through a combination of cognitive-behavioral therapy (CBT), particularly exposure and response prevention (ERP), and medication. Treatment plans are customized based on the individual's specific obsessions and compulsions, with an emphasis on reducing anxiety and improving quality of life.",
+        "treatments": [
+          {
+            "name": "Exposure and Response Prevention (ERP)",
+            "description": "A type of CBT that helps reduce the compulsions associated with obsessions."
+          },
+          {
+            "name": "Medications",
+            "description": "Antidepressants are commonly used to help control obsessions and compulsions."
+          },
+          {
+            "name": "Support Groups",
+            "description": "Support groups provide a community for sharing strategies and reducing feelings of isolation."
+          }
+        ]
+      }
+    ]
+}   
+  
+  

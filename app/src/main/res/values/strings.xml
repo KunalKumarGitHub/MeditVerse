@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MeditVerse</string>
+    <string name="insomnia">Insomnia is a sleep disorder characterized by difficulty falling asleep, staying asleep, or both, even if you have ample time and a bedroom environment conducive to restful sleep. An insomnia diagnosis requires these sleep troubles to also cause daytime impairments, such as sleepiness or difficulty concentrating. Up to two-thirds of people occasionally experience insomnia symptoms. These bouts of sleeplessness may or may not meet the criteria for a formal diagnosis of insomnia, depending on how long they last and whether they cause distress or interfere with daily functioning. But it is important for anyone who has concerns about their sleep to discuss them with a health professional for proper diagnosis and treatment.</string>
+    <string name="depression">Depression is a mood disorder that causes persistent feelings of sadness, emptiness, and loss of joy. It is different from the mood fluctuations that people regularly experience as a part of life.
+Major life events, such as bereavement or the loss of a job, can triggerTrusted Source depression. But depression is distinct from the negative feelings a person may temporarily have in response to a difficult life event.
+Depression often persists in spite of a change of circumstances and causes feelings that are intense, chronic, and not proportional to a person’s circumstances.
+It is an ongoing problem, not a passing one. While there are different types of depression, the most common one is major depressive disorder. It consists of episodes during which the symptoms last for at least two weeks.Trusted Source
+Depression can last for several weeks, months, or years. For many people, it is a chronic illness that gets better and then relapses.</string>
+    <string name="insomnia_diagnosis">Doctors generally diagnose insomnia by evaluating a person’s sleep habits and medical history.
+Typically, a patient’s description of their symptoms informs their insomnia diagnosis. A doctor may instruct patients to keep a sleep diary for a week or more, which can provide insight about a person’s sleep duration, perceived sleep quality, and lifestyle choices that may contribute to sleep problems. Other self-reporting diagnostic tools, including the Pittsburgh Sleep Quality Index, may be used by medical professionals in a clinical setting to determine the severity of insomnia symptoms.
+If a doctor needs to rule out other sleep disorders that could be causing a person’s symptoms, other assessments, such as a sleep study, may be ordered.</string>
+    <string name="depression_diagnosis">If a person suspects that they have symptoms of depression, they should seek professional help from a doctor or mental health specialist.
+A qualified health professional can rule out various causes, ensure an accurate diagnosis, and provide safe and effective treatment.
+They will ask questions about symptoms, such as how long they have been present. A doctor may also conduct an examination to check for physical causes and order a blood test to rule out other health conditions.</string>
+</resources>
