@@ -2,7 +2,6 @@ package com.learning.meditation.screen
 
 import android.graphics.drawable.AnimatedVectorDrawable
 import android.widget.ImageView
-import android.widget.Toast
 import androidx.compose.animation.core.Animatable
 import androidx.compose.animation.core.LinearEasing
 import androidx.compose.animation.core.RepeatMode
@@ -318,15 +317,7 @@ fun SleepDetailScreen(
                                                     userId,
                                                     playlists[index],
                                                     track,
-                                                    context1, {
-                                                        Toast
-                                                            .makeText(
-                                                                context,
-                                                                "Track added ${playlists[index].playlistName}",
-                                                                Toast.LENGTH_SHORT
-                                                            )
-                                                            .show()
-                                                    }
+                                                    context1
                                                 ) { exception ->
                                                     coroutineScope.launch {
                                                         snackbarHostState.showSnackbar("Failed to add track: ${exception.message}")
